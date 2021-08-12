@@ -1,0 +1,29 @@
+/* SITE-FOOTER */
+.site-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px 100px;
+}
+
+.site-footer__links{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-footer__social-links{
+  display: flex;
+  flex-direction: column;
+}
+
+.site-footer__social-link{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-footer__button{
+  display: flex;
+  flex-direction: column;
+}

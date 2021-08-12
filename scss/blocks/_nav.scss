@@ -1,0 +1,36 @@
+/* NAV */
+.nav-list{
+  @include list-unstyled;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item:not(:last-child){
+  margin-right: 30px;
+}
+
+.nav-link{
+  text-decoration: none;
+  font-family: Public Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.107692px;
+  color: #9597A5;
+}
+
+@include breakpoint-down (570px) {
+
+  .nav-list{
+    flex-direction: column;
+    position: relative;
+    background-color: #fff;
+    padding: 32px 100px;
+  }
+
+  .nav-item:not(:last-child){
+    margin-right: 0px;
+    margin-bottom: 24px;
+  }
+}

@@ -1,0 +1,123 @@
+/* CHOOSE */
+.choose{
+  background-color: #F4F5F7;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 96px
+}
+
+.choose-title{
+  @include list-unstyled;
+  padding-top: 96px;
+  margin-bottom: 16px;
+  font-family: Public Sans;
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 64px;
+  letter-spacing: -0.714286px;
+  color: #2D314D;
+}
+
+.choose-info{
+  @include list-unstyled;
+  margin-bottom: 184px;
+  font-family: Public Sans;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.28125px;
+  color: #9597A5;
+  max-width: 635px;
+}
+
+.choose-list{
+  @include list-unstyled;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.choose-item:not(:last-child){
+  margin-right: 30px;
+}
+
+.choose-item__bank{
+  position: relative;
+}
+
+.choose-item__bank::before{
+  position: absolute;
+  content: "";
+  width: 72px;
+  height: 72px;
+  background-image: url(../../img/bank.png);
+  background-repeat: no-repeat;
+  left: 0%;
+  top: -90%;
+}
+
+.choose-item__budget{
+  position: relative;
+}
+
+.choose-item__budget::before{
+  position: absolute;
+  content: "";
+  width: 72px;
+  height: 72px;
+  background-image: url(../../img/budget.png);
+  background-repeat: no-repeat;
+  left: 0%;
+  top: -90%;
+}
+
+.choose-item__people{
+  position: relative;
+}
+
+.choose-item__people::before{
+  position: absolute;
+  content: "";
+  width: 72px;
+  height: 72px;
+  background-image: url(../../img/people.png);
+  background-repeat: no-repeat;
+  left: 0%;
+  top: -90%;
+}
+
+.choose-item__api{
+  position: relative;
+}
+
+.choose-item__api::before{
+  position: absolute;
+  content: "";
+  width: 72px;
+  height: 72px;
+  background-image: url(../../img/API.png);
+  background-repeat: no-repeat;
+  left: 0%;
+  top: -90%;
+}
+
+.choose-item__title{
+  font-family: Public Sans;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.428571px;
+  color: #2D314D;
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.choose-item__text{
+  margin: 0;
+  font-family: Public Sans;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  color: #9597A5;
+}
