@@ -1,6 +1,22 @@
 /* MAIN */
 .main{
-  background-image: url(../../img/Group.png);
+  background-image: url(../../img/hero-phones-desktop.png), url(../../img/Group.png);
   background-repeat: no-repeat;
-  background-position: calc(50% - -582px)-255px;
+  background-position: calc(50% - -510px) -133px, calc(50% - -582px)-255px;
+}
+
+/* MEDIA*/
+
+@include breakpoint-down (1110px) {
+  .main{
+    background-position: calc(50% - -590px) -133px,calc(50% - -691px)-255px;
+  }
+}
+
+@include breakpoint-down (530px) {
+  .main{
+    background-image: url(../../img/mobile-bg.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% - -173px)-161px;
+  }
 }

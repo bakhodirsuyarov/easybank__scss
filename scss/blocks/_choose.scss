@@ -1,6 +1,6 @@
 /* CHOOSE */
 .choose{
-  background-color: #F4F5F7;
+  // background-color: #F4F5F7;
   padding-left: 100px;
   padding-right: 100px;
   padding-bottom: 96px
@@ -35,70 +35,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.choose-item{
+  width: calc(100% / 4 - 30px);
 }
 
 .choose-item:not(:last-child){
   margin-right: 30px;
 }
 
-.choose-item__bank{
-  position: relative;
-}
-
-.choose-item__bank::before{
-  position: absolute;
-  content: "";
-  width: 72px;
-  height: 72px;
-  background-image: url(../../img/bank.png);
-  background-repeat: no-repeat;
-  left: 0%;
-  top: -90%;
-}
-
-.choose-item__budget{
-  position: relative;
-}
-
-.choose-item__budget::before{
-  position: absolute;
-  content: "";
-  width: 72px;
-  height: 72px;
-  background-image: url(../../img/budget.png);
-  background-repeat: no-repeat;
-  left: 0%;
-  top: -90%;
-}
-
-.choose-item__people{
-  position: relative;
-}
-
-.choose-item__people::before{
-  position: absolute;
-  content: "";
-  width: 72px;
-  height: 72px;
-  background-image: url(../../img/people.png);
-  background-repeat: no-repeat;
-  left: 0%;
-  top: -90%;
-}
-
-.choose-item__api{
-  position: relative;
-}
-
-.choose-item__api::before{
-  position: absolute;
-  content: "";
-  width: 72px;
-  height: 72px;
-  background-image: url(../../img/API.png);
-  background-repeat: no-repeat;
-  left: 0%;
-  top: -90%;
+.choose-item__img{
+  margin-bottom: 40px;
 }
 
 .choose-item__title{
@@ -120,4 +70,63 @@
   line-height: 26px;
   letter-spacing: -0.25px;
   color: #9597A5;
+}
+
+/* MEDIA */
+
+@include breakpoint-down (970px) {
+
+  .choose-item{
+    width: calc(100% / 2 - 70px);
+    margin-bottom: 50px;
+  }
+
+  .choose-item:not(:last-child){
+    margin-right: 0;
+  }
+
+  .choose-info{
+    margin-bottom: 100px;
+  }
+
+  .choose-item__img{
+    margin-bottom: 20px;
+  }
+}
+
+@include breakpoint-down (810px){
+
+  .choose{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@include breakpoint-down (570px){
+
+  .choose{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 0;
+  }
+}
+
+@include breakpoint-down (530px){
+
+  .choose-title{
+    text-align: center;
+    padding-top: 0;
+  }
+
+  .choose-info{
+    text-align: center;
+  }
+}
+
+@include breakpoint-down (490px){
+
+  .choose-item{
+    text-align: center;
+    width: 100%;
+  }
 }

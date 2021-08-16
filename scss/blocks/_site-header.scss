@@ -1,15 +1,19 @@
 /* SITE-HEADER */
-.site-header{
-  position: relative;
-  z-index: 2;
+.site-header__section{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  }
+
+.site-header{
+  position: relative;
+  z-index: 2;
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 18px;
   padding-bottom: 18px;
   background-color: #FFFFFF;
+
 }
 
 .site-header__link{

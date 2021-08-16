@@ -3,7 +3,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 48px 100px;
+  width: 100%;
 }
 
 .site-footer__links{
@@ -15,6 +17,7 @@
 .site-footer__social-links{
   display: flex;
   flex-direction: column;
+  margin-right: 130px;
 }
 
 .site-footer__social-link{
@@ -23,7 +26,126 @@
   align-items: center;
 }
 
+.site-footer__logo{
+  margin-bottom: 55px;
+}
+
 .site-footer__button{
   display: flex;
   flex-direction: column;
 }
+
+.site-footer__link-list{
+  @include list-unstyled;
+}
+
+.site-footer__link-list:not(:last-child){
+  margin-right: 90px;
+}
+
+.site-footer__link-item:not(:last-child){
+  margin-bottom: 8px;
+}
+
+.site-footer__link-link{
+  font-family: Public Sans;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: -0.234375px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.site-footer__bottom-button{
+  font-family: Public Sans;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  color: #FFFFFF;
+  background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+  border-radius: 22px;
+  padding: 8px 35px;
+  margin-bottom: 24px;
+  text-decoration: none;
+}
+
+.site-footer__span{
+  font-family: Public Sans;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: right;
+  letter-spacing: -0.234375px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+/* MEDIA */
+
+@include breakpoint-down(1150px){
+
+  .site-footer{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@include breakpoint-down (900px){
+
+  .site-footer__social-links{
+    margin-right: 50px;
+  }
+
+  .site-footer__link-list:not(:last-child){
+    margin-right: 30px;
+  }
+}
+
+@include breakpoint-down (670px) {
+
+  .site-footer{
+    flex-direction: column;
+  }
+
+  .site-footer__links{
+    margin-bottom: 32px;
+  }
+}
+
+@include breakpoint-down (570px) {
+
+  .site-footer{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@include breakpoint-down (440px) {
+
+  .site-footer__links{
+    flex-direction: column;
+  }
+
+  .site-footer__social-links{
+    margin-right: 0;
+  }
+
+  .site-footer__logo{
+    margin-bottom: 32px;
+  }
+
+  .site-footer__social-link{
+    margin-bottom: 32px;
+  }
+
+  .site-footer__link-list{
+    text-align: center;
+  }
+
+  .site-footer__link-list:not(:last-child){
+    margin-right: 0;
+  }
+}
+
